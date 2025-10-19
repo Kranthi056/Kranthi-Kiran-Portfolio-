@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Kranthi Kiran - Data Analyst Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar-custom">
+        <div class="nav-container">
+            <div class= "logo"><i class="fas fa-chart-line"></i> Kranthi Kiran</div>
+            <div class="nav-links">
+                <a href="#" onclick="showSection('home')">Home</a>
+                <a href="#" onclick="showSection('projects')">Projects</a>
+                <a href="#" onclick="showSection('internship')">Internship</a>
+                <a href="#" onclick="showSection('skills')">Skills</a>
+                <a href="#" onclick="showSection('contact')">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        
+        <section class="page-section active" id="home-section">
+            <div class="about-section">
+                <div class="about-container">
+                    <div class="about-content">
+                        <div class="profile-image-container">
+                            <div class="profile-image">
+                                <img src="k.jpeg" alt="Profile">
+                            </div>
+                        </div>
+
+                        <div class="about-text">
+                            <h1>P Kranthi Kiran</h1>
+                            <h4 class="designation">Data Analyst</h4>
+                            
+                            <p class="about-description">
+                                I’m P. Kranthi Kiran, a Computer Science Engineering in Data Science student passionate about technology, problem-solving, and innovation. I enjoy exploring machine learning, data science, and web development, where creativity meets logic. With strong analytical and collaborative skills, I aim to build smart, efficient solutions that simplify real-world challenges.
+                            </p>
+                            <p class="about-description">
+                                 As a Data Analyst, I have hands-on experience in Python, Tableau, and core ML libraries, specializing in data visualization, EDA, and actionable insights. Currently, I’m developing Viscend AI, an intelligent analytics platform that automates data cleaning, generates smart visualizations, and provides conversational, insight-driven analysis for faster and smarter decision-making.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section education-section">
+                <div class="section-container">
+                    <h2 class="section-title">Education</h2>
+                    
+                    <div class="education-item">
+                        <div class="education-header">
+                            <div>
+                                <h3>Bachelor of Technology - Data Science</h3>
+                                <p class="education-school">Institute of Aeronautical Engineering,Hyderabad</p>
+                            </div>
+                            <span class="education-date">July 2025</span>
+                        </div>
+                        <div class="education-details">
+                            <p><strong>CGPA:</strong> 7.0/10.0</p>
+                            <p><strong>Academic Project:</strong> 
+                                <button class="project-link" onclick="showProjectPage(5)">Pet Breed and Health Identifier</button>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <div>
+                                <h3>Class 12th - Senior Intermediate</h3>
+                                <p class="education-school">Gnana Prabha Junior College, Gadwal</p>
+                            </div>
+                            <span class="education-date">June 2021</span>
+                        </div>
+                        <div class="education-details">
+                            <p><strong>Score:</strong> 916</p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <div>
+                                <h3>Class 10th</h3>
+                                <p class="education-school">Sree Saraswathi Talent High School, Gadwal</p>
+                            </div>
+                            <span class="education-date">May 2019</span>
+                        </div>
+                        <div class="education-details">
+                            <p><strong>CGPA:</strong> 9.7/10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2025 P Kranthi Kiran. All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="https://linkedin.com/in/p-kranthi-kiran-3995152bb" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Kranthi056" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:kranthi678990@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <section class="page-section" id="projects-section">
+            <div class="full-page-content">
+                <div class="section-header">
+                    <h1 class="page-title">Featured Projects</h1>
+                    <button class="back-button" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Back</button>
+                </div>
+
+                <div class="projects-container">
+                    <div class="project-detail-card">
+                        <div class="project-detail-header">
+                            <div class="project-icon">📊</div>
+                            <h3>Real Estate Mortgage Analysis</h3>
+                            <p class="project-date">Dec 2024 – Jan 2025</p>
+                        </div>
+                        <div class="project-detail-body">
+                            <p class="project-description">
+                                Processed 27K+ location records with 80+ features, built linear regression model predicting monthly mortgage costs with R² = 0.735 accuracy.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Tableau</span>
+                                <span class="tech-tag">Regression</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="view-details-btn" onclick="openProjectModal(1)">View Details</button>
+                                <a href="https://github.com/Kranthi056" target="_blank" class="github-link" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-card">
+                        <div class="project-detail-header">
+                            <div class="project-icon">💼</div>
+                            <h3>Science-Qtech Employee Performance Mapping</h3>
+                            <p class="project-date">Feb 2024 – Mar 2024</p>
+                        </div>
+                        <div class="project-detail-body">
+                            <p class="project-description">
+                                Designed relational database with advanced SQL reports using JOINs, subqueries, and window functions for employee performance analytics.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Database Design</span>
+                                <span class="tech-tag">Analytics</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="view-details-btn" onclick="openProjectModal(2)">View Details</button>
+                                <a href="https://github.com/Kranthi056" target="_blank" class="github-link" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-card">
+                        <div class="project-detail-header">
+                            <div class="project-icon">📈</div>
+                            <h3>DigiComp Sales Dashboard</h3>
+                            <p class="project-date">Aug 2023 – Sep 2023</p>
+                        </div>
+                        <div class="project-detail-body">
+                            <p class="project-description">
+                                Built interactive Tableau dashboard with KPIs tracking, geospatial maps, and return rate analysis for inventory optimization.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Tableau</span>
+                                <span class="tech-tag">Data Visualization</span>
+                                <span class="tech-tag">Analytics</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="view-details-btn" onclick="openProjectModal(3)">View Details</button>
+                                <a href="https://github.com/Kranthi056" target="_blank" class="github-link" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-card">
+                        <div class="project-detail-header">
+                            <div class="project-icon"></div>
+                            <h3>Movie Recommendation System</h3>
+                            <p class="project-date">July 2024 - Sep 2024</p>
+                        </div>
+                        <div class="project-detail-body">
+                            <p class="project-description">
+                                Developed an intelligent movie recommendation system using Python and Scikit-learn with a Streamlit UI, enabling personalized content discovery.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Cosine Similarity</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="view-details-btn" onclick="openProjectModal(4)">View Details</button>
+                                <a href="https://cinema-movie-recommedation-system-app-ba4ual.streamlit.app/" target="_blank" class="Website-link" title="Webiste"><i class="fab fa-Webiste"></i>Webiste</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-detail-card">
+                        <div class="project-detail-header">
+                            <div class="project-icon">🐶</div>
+                            <h3>PET BREED AND HEALTH IDENTIFIER</h3>
+                            <p class="project-date">Academic Project</p>
+                        </div>
+                        <div class="project-detail-body">
+                            <p class="project-description">
+                                AI-powered application using deep learning and computer vision to identify pet breeds and detect health issues from images. Implemented transfer learning with VGG16 achieving 93% accuracy.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Deep Learning</span>
+                                <span class="tech-tag">CNNs</span>
+                                <span class="tech-tag">Transfer Learning</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="view-details-btn" onclick="showProjectPage(5)">View Details</button>
+                                <a href="URL_FOR_GITHUB" target="_blank" class="github-link" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2025 P Kranthi Kiran. All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="https://linkedin.com/in/p-kranthi-kiran-3995152bb" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Kranthi056" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:kranthi678990@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <section class="page-section" id="internship-section">
+            <div class="full-page-content">
+                <div class="section-header">
+                    <h1 class="page-title">Experience & Internship</h1>
+                    <button class="back-button" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Back</button>
+                </div>
+                <div class="internship-container">
+                    <div class="internship-detail-card">
+                        <div class="internship-detail-header">
+                            <div>
+                                <h3>Data Analyst Associate Intern</h3>
+                                <p class="internship-company">Excelerate, Saint Louis University</p>
+                            </div>
+                            <span class="internship-date">Aug 2024 – Sep 2024</span>
+                        </div>
+                        <div class="internship-details">
+                            <p><strong>Location:</strong> Virtual</p>
+                            <p><strong>Duration:</strong> 1 Month</p>
+                            <ul class="achievements-list">
+                                <li>Executed EDA on 27K+ user records, resolving 10K+ missing Degree entries and detecting outliers to enhance data accuracy</li>
+                                <li>Developed interactive dashboards in Google Data Studio to track student performance and engagement in real-time</li>
+                                <li>Implemented Python scripts for automated data cleaning and pre-processing, reducing manual effort by 40%</li>
+                                <li>Collaborated with the product team to define key business metrics and streamline data pipelines</li>
+                            </ul>
+                        </div>
+                        <div class="intership-footer">
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">EDA</span>
+                                <span class="tech-tag">Google Data Studio</span>
+                                 <a href="https://github.com/Kranthi056" target="_blank" class="github-link" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2025 P Kranthi Kiran. All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="https://linkedin.com/in/p-kranthi-kiran-3995152bb" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Kranthi056" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:kranthi678990@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <section class="page-section" id="skills-section">
+            <div class="full-page-content">
+                <div class="section-header">
+                    <h1 class="page-title">Skills & Expertise</h1>
+                    <button class="back-button" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Back</button>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skill-detail-card">
+                        <div class="skill-inner">
+                            <div class="skill-front">
+                                <div class="project-icon"><i class="fas fa-database"></i></div>
+                                <h4>Programming</h4>
+                            </div>
+                            <div class="skill-back">
+                                <ul class="skill-list">
+                                    <li>Python</li>
+                                    <li>SQL </li>
+                                    <li>R</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-detail-card">
+                        <div class="skill-inner">
+                            <div class="skill-front">
+                                <div class="project-icon"><i class="fas fa-chart-area"></i></div>
+                                <h4>Visualization & BI</h4>
+                            </div>
+                            <div class="skill-back">
+                                <ul class="skill-list">
+                                    <li>Tableau</li>
+                                    <li>Matplolib</li>
+                                    <li>Seaborn</li>
+                                    <li>CRM Analytics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-detail-card">
+                        <div class="skill-inner">
+                            <div class="skill-front">
+                                <div class="project-icon"><i class="fas fa-robot"></i></div>
+                                <h4>Predictive Analytics</h4>
+                            </div>
+                            <div class="skill-back">
+                                <ul class="skill-list">
+                                    <li>Exploratory Data Analysis</li>
+                                    <li>Statistical Modeling</li>
+                                    <li>Regression </li>
+                                    <li>Recommendation System</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-detail-card">
+                        <div class="skill-inner">
+                            <div class="skill-front">
+                                <div class="project-icon"><i class="fas fa-code"></i></div>
+                                <h4>Tools & libraries</h4>
+                            </div>
+                            <div class="skill-back">
+                                <ul class="skill-list">
+                                    <li>Numpy</li>
+                                    <li>Pandas</li>
+                                    <li>Scikit-learn</li>
+                                    <li>GitHub</li>
+                                    <li>Jupyter NoteBook</li>
+                                    <li>Stream Lit</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2025 P Kranthi Kiran. All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="https://linkedin.com/in/p-kranthi-kiran-3995152bb" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Kranthi056" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:kranthi678990@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <section class="page-section" id="contact-section">
+            <div class="full-page-content">
+                <div class="section-header">
+                    <h1 class="page-title">Get In Touch</h1>
+                    <button class="back-button" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Back</button>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-card">
+                        <h2>Contact Details</h2>
+                        <p><i class="fas fa-envelope contact-icon"></i> kranthi678990@gmail.com</p>
+                        <p><i class="fab fa-linkedin contact-icon"></i> <a href="https://linkedin.com/in/p-kranthi-kiran-3995152bb" target="_blank">p-kranthi-kiran-3995152bb</a></p>
+                        <p><i class="fab fa-github contact-icon"></i> <a href="https://github.com/Kranthi056" target="_blank">Kranthi056</a></p>
+                        <p><i class="fas fa-map-marker-alt contact-icon"></i> Hyderabad, India</p>
+                    </div>
+                    <div class="contact-form-container">
+                        <h2>Send a Message</h2>
+                        <form action="mailto:kranthi678990@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                        <p class="form-note">Your message will be sent to kranthi678990@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2025 P Kranthi Kiran. All Rights Reserved.</p>
+                    <div class="footer-links">
+                        <a href="https://linkedin.com/in/p-kranthi-kiran-3995152bb" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Kranthi056" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:kranthi678990@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <section class="page-section project-detail-page" id="pet-project-section">
+            <div class="full-page-content">
+                <div class="section-header">
+                    <h1 class="page-title" id="pet-project-title">Project Details</h1> 
+                    <button class="back-button" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Back to Home</button>
+                </div>
+                
+                <div id="pet-project-content" class="project-page-container">
+                    </div>
+
+                <footer class="footer">
+                    <div class="footer-content">
+                        <p>&copy; 2025 P Kranthi Kiran. All Rights Reserved.</p>
+                        <div class="footer-links">
+                            <a href="https://linkedin.com/in/p-kranthi-kiran-3995152bb" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Kranthi056" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="mailto:kranthi678990@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        </div>
+
+    <div class="modal" id="projectModal" onclick="if(event.target === this) closeProjectModal()">
+        <div class="modal-content" id="modalContent">
+            </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
